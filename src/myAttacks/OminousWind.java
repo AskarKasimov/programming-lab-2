@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.Type;
 
 public class OminousWind extends SpecialMove {
-    public OminousWind() {
+        public OminousWind() {
         this.type = Type.GHOST;
         this.power = 60;
         this.accuracy = 100;
@@ -16,8 +16,8 @@ public class OminousWind extends SpecialMove {
     }
 
     @Override
-    protected void applySelfDamage(Pokemon pokemon, double v) {
-        super.applySelfDamage(pokemon, v);
+    protected void applySelfEffects(Pokemon pokemon) {
+        super.applySelfEffects(pokemon);
         if (0.1 >= Math.random()) {
             pokemon.setStats(
                     pokemon.getHP(),

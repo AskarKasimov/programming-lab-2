@@ -16,8 +16,8 @@ public class FireFang extends PhysicalMove {
     }
 
     @Override
-    protected void applyOppDamage(Pokemon pokemon, double v) {
-        super.applyOppDamage(pokemon, v);
+    protected void applyOppEffects(Pokemon pokemon) {
+        super.applyOppEffects(pokemon);
         if (0.1 >= Math.random()) {
             Effect.burn(pokemon);
         }

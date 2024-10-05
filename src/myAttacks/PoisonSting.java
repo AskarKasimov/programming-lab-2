@@ -16,8 +16,8 @@ public class PoisonSting extends PhysicalMove {
     }
 
     @Override
-    protected void applyOppDamage(Pokemon pokemon, double v) {
-        super.applyOppDamage(pokemon, v);
+    protected void applyOppEffects(Pokemon pokemon) {
+        super.applyOppEffects(pokemon);
         if (0.3 >= Math.random()) {
             Effect.poison(pokemon);
         }

@@ -16,8 +16,8 @@ public class Flamethrower extends SpecialMove {
     }
 
     @Override
-    protected void applyOppDamage(Pokemon pokemon, double v) {
-        super.applyOppDamage(pokemon, v);
+    protected void applyOppEffects(Pokemon pokemon) {
+        super.applyOppEffects(pokemon);
         // TODO: Water Veil check, but not my case
         if (0.1 >= Math.random()) {
             Effect.burn(pokemon);

@@ -16,8 +16,8 @@ public class Crunch extends PhysicalMove {
     }
 
     @Override
-    protected void applyOppDamage(Pokemon pokemon, double v) {
-        super.applyOppDamage(pokemon, v);
+    protected void applyOppEffects(Pokemon pokemon) {
+        super.applyOppEffects(pokemon);
         if (0.2 >= Math.random()) {
             pokemon.setMod(Stat.DEFENSE, (int) pokemon.getStat(Stat.DEFENSE) * 2 / 3);
         }
