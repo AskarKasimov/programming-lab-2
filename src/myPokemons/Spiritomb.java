@@ -1,9 +1,9 @@
-package mypokemons;
+package myPokemons;
 
-import myattacks.FeintAttack;
-import myattacks.NastyPlot;
-import myattacks.OminousWind;
-import myattacks.Swagger;
+import myAttacks.FeintAttack;
+import myAttacks.NastyPlot;
+import myAttacks.OminousWind;
+import myAttacks.Swagger;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
@@ -19,9 +19,11 @@ public class Spiritomb extends Pokemon {
                 35
         );
         setType(Type.GHOST, Type.DARK);
-        addMove(new Swagger());
-        addMove(new NastyPlot());
-        addMove(new FeintAttack());
-        addMove(new OminousWind());
+        setMove(
+                new Swagger(),
+                new NastyPlot(),
+                new FeintAttack(),
+                new OminousWind()
+        );
     }
 }

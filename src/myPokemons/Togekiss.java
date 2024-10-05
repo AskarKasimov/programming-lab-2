@@ -1,6 +1,6 @@
-package mypokemons;
+package myPokemons;
 
-import myattacks.Flamethrower;
+import myAttacks.Flamethrower;
 import ru.ifmo.se.pokemon.Type;
 
 public class Togekiss extends Togetic {

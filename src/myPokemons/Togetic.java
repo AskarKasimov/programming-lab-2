@@ -1,6 +1,6 @@
-package mypokemons;
+package myPokemons;
 
-import myattacks.SweetKiss;
+import myAttacks.SweetKiss;
 import ru.ifmo.se.pokemon.Type;
 
 public class Togetic extends Togepi {

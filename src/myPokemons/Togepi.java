@@ -1,7 +1,7 @@
-package mypokemons;
+package myPokemons;
 
-import myattacks.Confide;
-import myattacks.Rest;
+import myAttacks.Confide;
+import myAttacks.Rest;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
@@ -17,7 +17,9 @@ public class Togepi extends Pokemon {
                 20
         );
         setType(Type.FAIRY);
-        addMove(new Confide());
-        addMove(new Rest());
+        setMove(
+                new Confide(),
+                new Rest()
+        );
     }
 }

@@ -1,8 +1,8 @@
-package mypokemons;
+package myPokemons;
 
-import myattacks.Crunch;
-import myattacks.DarkPulse;
-import myattacks.PoisonSting;
+import myAttacks.Crunch;
+import myAttacks.DarkPulse;
+import myAttacks.PoisonSting;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
@@ -18,8 +18,10 @@ public class Skorupi extends Pokemon {
                 65
         );
         setType(Type.POISON, Type.BUG);
-        addMove(new Crunch());
-        addMove(new DarkPulse());
-        addMove(new PoisonSting());
+        setMove(
+                new Crunch(),
+                new DarkPulse(),
+                new PoisonSting()
+        );
     }
 }

@@ -1,14 +1,14 @@
-package myattacks;
+package myAttacks;
 
 import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
 
-public class PoisonSting extends PhysicalMove {
-    public PoisonSting() {
-        this.type = Type.POISON;
-        this.power = 15;
+public class Flamethrower extends SpecialMove {
+    public Flamethrower() {
+        this.type = Type.FIRE;
+        this.power = 90;
         this.accuracy = 100;
 
         this.priority = 0;
@@ -18,13 +18,14 @@ public class PoisonSting extends PhysicalMove {
     @Override
     protected void applyOppDamage(Pokemon pokemon, double v) {
         super.applyOppDamage(pokemon, v);
-        if (0.3 >= Math.random()) {
-            Effect.poison(pokemon);
+        // TODO: Water Veil check, but not my case
+        if (0.1 >= Math.random()) {
+            Effect.burn(pokemon);
         }
     }
 
     @Override
     protected String describe() {
-        return "Физатака Poison Sting!";
+        return "Спецатака Flamethrower!";
     }
 }

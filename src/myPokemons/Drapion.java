@@ -1,6 +1,6 @@
-package mypokemons;
+package myPokemons;
 
-import myattacks.FireFang;
+import myAttacks.FireFang;
 import ru.ifmo.se.pokemon.Type;
 
 public class Drapion extends Skorupi {

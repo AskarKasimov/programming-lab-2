@@ -1,4 +1,4 @@
-package myattacks;
+package myAttacks;
 
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Stat;
