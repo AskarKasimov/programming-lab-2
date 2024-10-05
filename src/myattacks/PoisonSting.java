@@ -4,7 +4,6 @@ import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
-import utlis.Utils;
 
 public class PoisonSting extends PhysicalMove {
     public PoisonSting() {
